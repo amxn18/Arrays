@@ -32,16 +32,16 @@ class Solution {
             return water;
         }
     };
-    // # 🧠 Problem: Trapping Rain Water (Leetcode 42) 
+    // # Problem: Trapping Rain Water (Leetcode 42) 
 
-    // # 🧩 Goal:
+    // #  Goal:
     // # Given elevation map (heights), find total water trapped between bars after raining.
     
-    // # ⚙️ Intuition:
+    // #  Intuition:
     // # Water trapped at any point is min(left_max, right_max) - height[i]
     // # Instead of precomputing arrays, use two pointers (left, right) and track leftMax/rightMax while moving inward.
     
-    // # ⚙️ Approach:
+    // #  Approach:
     // # 1. Initialize left = 0, right = n-1
     // # 2. leftMax = 0, rightMax = 0 to track max heights from both ends
     // # 3. While left < right:
@@ -52,13 +52,13 @@ class Solution {
     // #    - Else process right side similarly
     // # 4. Keep adding trapped water as we go
     
-    // # 🕒 Time Complexity:
+    // #  Time Complexity:
     // # O(n) → Single pass with two pointers
     
-    // # 💾 Space Complexity:
+    // #  Space Complexity:
     // # O(1) → Constant space (no extra arrays or stacks)
     
-    // # ✅ Handles:
+    // #  Handles:
     // # - Efficient memory usage
     // # - No stack used
     // # - Works well for large input
