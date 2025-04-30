@@ -50,7 +50,7 @@ class Solution {
     // Given an array of integers `nums` and an array `queries`, return an array where each element is the maximum length of a subsequence of `nums` such that the sum of its elements is less than or equal to the corresponding query value.
     
     // ## Approach:
-    // 1. Sort the array `nums` to access smallest elements first.
+    // 1. Sort the array `nums` to access smallest elements first. 
     // 2. Create a prefix sum array to allow sum calculation in O(1).
     // 3. For each query, perform binary search on the prefix sum to find the maximum count of elements whose sum is <= query.
     // 4. Store the count as result.
